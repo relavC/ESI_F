@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background:  #12a14b;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #343a40; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+     
+    }
+
+.full-screen {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #12a14b; 
+    color: white    ;
+   
+}
+.tailoy-logo {
+    max-width: 300px; 
+    margin-bottom: 30px; 
+}
+
+.full-screen h1 {
+    font-size: 3rem; 
+}
+
+.full-screen p {
+    font-size: 1.5rem; 
+}
+
+.btn {
+    padding: 15px 30px; 
+    font-size: 1.2rem; 
+}
+
+.container.text-center {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+.form-section, .confirmation-section {
+    height:  100vh  ; 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    padding: 20px; 
+    overflow-y: auto; 
+    margin-top: 20px; 
+}
+
+.confirmation-section {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    
+}
+.borde{
+    padding: 5%;   
+    box-shadow: 0 6px 8px rgb(0, 0, 0);
+}
+.btn {
+    box-shadow: 0 6px 8px rgb(250, 249, 249);
+    margin: 10px;
+}
+
+.tailoy-logo {
+    max-width: 200px; 
+    margin-bottom: 20px; 
+}
