@@ -33,3 +33,16 @@ document.querySelector('.change-product-section').style.display = 'none';
 document.querySelector('.return-product-section').style.display = 'none';
 document.querySelector('.confirmation-section').style.display = 'flex';
 }
+
+
+document.querySelector('.profile-container').addEventListener('click', function() {
+    const dropdown = document.querySelector('.dropdown-options');
+    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+});
+
+// Cierra el dropdown si se hace clic fuera de él
+window.addEventListener('click', function(event) {
+    if (!event.target.closest('.dropdown')) {
+        document.querySelector('.dropdown-options').style.display = 'none';
+    }
+});

@@ -13,6 +13,55 @@ body, html {
      
     }
 
+/**/.user-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #12a14b; /* Cambia este color al que desees */
+    padding: 5px 10px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.arrow {
+    margin-left: 5px; /* Espacio entre el nombre y la flecha */
+    font-size: 0.8rem; /* Tamaño de la flecha */
+    color: white; /* Cambia el color de la flecha a blanco */
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #12a14b; /* Fondo blanco para las opciones del dropdown */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    z-index: 1001; /* Asegúrate de que esté por encima de otros elementos */
+    min-width: 120px; /* Ancho mínimo para las opciones */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto */
+}
+
+.dropdown-item:hover {
+    background-color: #fafafa96; /* Color de fondo al pasar el mouse */
+}
+/**/
 .full-screen {
     height: 100vh; 
     display: flex;
