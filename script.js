@@ -46,3 +46,15 @@ window.addEventListener('click', function(event) {
         document.querySelector('.dropdown-options').style.display = 'none';
     }
 });
+
+// Botón para volver desde el formulario de cambio de producto
+document.getElementById('backToSelectionBtn').addEventListener('click', function() {
+    document.querySelector('.change-product-section').style.display = 'none';
+    document.getElementById('selectionScreen').style.display = 'flex';
+});
+
+// Botón para volver desde el formulario de devolución de producto
+document.getElementById('backToSelectionBtnReturn').addEventListener('click', function() {
+    document.querySelector('.return-product-section').style.display = 'none';
+    document.getElementById('selectionScreen').style.display = 'flex';
+});
